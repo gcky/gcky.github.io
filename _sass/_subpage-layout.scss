@@ -1,0 +1,155 @@
+.left-side,
+.right-side {
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+
+.right-side {
+  flex-grow: 2;
+}
+
+.subpage-content {
+  width: $content-width;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.content-card {
+  width: 90%;
+  height: 180px;
+  background: white;
+  box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  padding: 35px 0 0 40px;
+  border-radius: 12px;
+  transition: 100ms ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  h2 {
+    color: #757575;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  p {
+    max-width: 80%;
+    color: #757575;
+    font-weight: 300;
+    // letter-spacing: .6px;
+  }
+
+  @media only screen and (-moz-max-device-pixel-ratio: 2), 
+       only screen and (-o-max-device-pixel-ratio: 2/1), 
+       only screen and (-webkit-max-device-pixel-ratio: 2), 
+       only screen and (max-device-pixel-ratio: 2) {
+    h2 {
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 400;
+    }
+  }
+}
+
+.border-teal {
+  // border: 1px solid #009688;
+}
+.border-orange {
+  // border: 1px solid #ff5722;
+}
+.border-magenta {
+  // border: 1px solid #9c27b0;
+}
+
+.subpage-header {
+  background: #039be5;
+  display: flex;
+  justify-content: center;
+  height: 220px;
+  width: 100%;
+  padding: 0 auto;
+
+  .left-side,
+  .right-side,
+  .subpage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 105px;
+  }
+
+  .left-side {
+    align-items: flex-end;
+
+    i {
+      color: white;
+      font-size: 35px;
+      opacity: .7;
+      padding-right: 80px;
+      padding-top: 8px;
+    }
+  }
+
+  .subpage-content {
+    h1 {
+      color: white;
+      font-weight: 700;
+      font-size: 35px;
+      margin: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 15px;
+    }
+  }
+
+  /* PROJECT PAGE HEADER */
+
+  &.project {
+    background: none;
+
+    .subpage-content {
+      h1,
+      p {
+        color: #757575;
+      }
+    }
+
+    .left-side {
+      i {
+        color: #757575;
+      }
+    }
+
+  }
+
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+
+  .subpage-content,
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .article-content {
+    width: $content-width;
+    max-width: $content-width;
+    color: #757575;
+    font-weight: 400;
+  }
+
+}
