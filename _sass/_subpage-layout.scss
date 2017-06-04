@@ -78,8 +78,7 @@
   padding: 0 auto;
 
   .left-side,
-  .right-side,
-  .subpage-content {
+  .right-side {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -93,13 +92,15 @@
       color: white;
       font-size: 35px;
       opacity: .7;
-      padding-right: 80px;
-      padding-top: 8px;
+      margin-right: 80px;
+      margin-top: 8px;
     }
   }
 
   .subpage-content {
     h1 {
+      position: absolute;
+      top: 105px;
       color: white;
       font-weight: 700;
       font-size: 35px;
@@ -107,8 +108,16 @@
     }
 
     p {
+      position: absolute;
+      top: 105px + 35px + 10px;
       color: white;
       font-size: 15px;
+    }
+
+    span {
+      position: absolute;
+      top: 105px - 20px;
+      color: #757575;
     }
   }
 
@@ -116,6 +125,7 @@
 
   &.project {
     background: none;
+    height: 220px - 50px;
 
     .subpage-content {
       h1,
@@ -149,6 +159,10 @@
     width: $content-width;
     color: #757575;
     font-weight: 400;
+    
+    h2 {
+      font-weight: 500;
+    }
   }
 
 }
