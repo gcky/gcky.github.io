@@ -1,10 +1,9 @@
 .main-desc {
   color: #757575;
   max-width: 500px;
-  // position: relative;
-  margin-top: 40vh;
-  margin-left: 40vw;
+  margin: 40vh 0 0 40vw;
   height: 300px;
+  transition: all 300ms ease-out;
 
   h1 {
     margin-bottom: 0;
@@ -37,7 +36,7 @@
 
   &.projects {
     background: #039be5;
-    top: 22vh;
+    top: 25vh;
     left: calc(40vw - 300px - 60px - 50px);
     animation: blob-move-down 800ms forwards cubic-bezier(0.000, 0.060, 0.000, 1.005), 
       blob-bounce-down 3s 1s infinite ease-in-out;
@@ -46,7 +45,7 @@
 
   &.labs {
     background: #ffb300;
-    top: 40vh;
+    top: calc(25vh + 80px);
     left: calc(40vw - 200px - 40px - 50px);
     animation: blob-move-up 800ms forwards cubic-bezier(0.000, 0.060, 0.000, 1.005), 
       blob-bounce-up 3s 1.1s infinite ease-in-out;
@@ -55,7 +54,7 @@
 
   &.blog {
     background: #43a047;
-    top: 30vh;
+    top: calc(25vh + 40px);
     left: calc(40vw - 100px - 20px - 50px);
     animation: blob-move-down 800ms forwards cubic-bezier(0.000, 0.060, 0.000, 1.005), 
       blob-bounce-down 3s 1.5s infinite ease-in-out;
@@ -77,24 +76,28 @@
 @keyframes blob-move-down {
   0% {
     transform: translateY(-80vh);
+    opacity: 0;
   }
   70% {
     transform: translateY(-5px);
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes blob-move-up {
   0% {
     transform: translateY(120vh);
+    opacity: 0;
   }
   70% {
     transform: translateY(5px);
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -119,5 +122,33 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+html,body {padding:0; margin:0;}
+
+@media screen and (max-width: 1140px) {
+
+  .main-desc {
+    margin: calc(30vh - 100px + 250px + 100px) 0 0 100px;
+  }
+
+  .main-nav-blob {
+
+    &.projects {
+      top: calc(25vh - 100px);
+      left: 100px;
+    }
+
+    &.labs {
+      top: calc(25vh + 80px - 100px);
+      left: 100px + 100px + 20px;
+    }
+
+    &.blog {
+      top: calc(25vh + 40px - 100px);
+      left: 100px + 200px + 40px;
+    }
+
   }
 }
