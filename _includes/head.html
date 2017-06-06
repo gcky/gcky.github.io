@@ -11,4 +11,19 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700" rel="stylesheet">
+
+  <script>
+    window.onresize = function(event) {
+      positionBackButton();
+    };
+    window.onload = function(event) {
+      positionBackButton();
+    }
+    function positionBackButton() {
+      var backButtons = document.getElementsByClassName('back')
+      if (backButtons.length == 0) return;
+      backButtons[0].style.left = document.getElementsByClassName('subpage-content')[0].getBoundingClientRect().left - 100 + 'px';
+    }
+  </script>
+
 </head>

@@ -1,7 +1,17 @@
-.left-side,
-.right-side {
-  flex-basis: 100px;
+.left-side {
   flex-grow: 1;
+
+  .back {
+    position: fixed;
+    color: #ddd;
+    opacity: .7;
+    top: 110px;
+    left: 8vw;
+
+    i {
+      font-size: 40px;
+    }
+  }
 }
 
 .right-side {
@@ -10,6 +20,7 @@
 
 .subpage-content {
   width: $content-width;
+  padding: 0 20px;
 }
 
 .card-link {
@@ -77,24 +88,11 @@
   width: 100%;
   padding: 0 auto;
 
-  .left-side,
   .right-side {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 105px;
-  }
-
-  .left-side {
-    align-items: flex-end;
-
-    i {
-      color: white;
-      font-size: 35px;
-      opacity: .7;
-      margin-right: 80px;
-      margin-top: 8px;
-    }
   }
 
   .subpage-content {
@@ -154,6 +152,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    padding: 0 20px;
   }
 
   .article-content {
