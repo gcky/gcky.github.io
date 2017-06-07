@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+
+    <header class="subpage-header article">
+      <section class="left-side">
+        <a class="back" href="{{ site.baseurl }}/projects"><i class="material-icons" role="button" aria-label="Back">arrow_back</i></a>
+      </section>
+      <section class="subpage-content">
+        <span>Article</span>
+        <h1>{{ page.article_title }}</h1>
+      </section>
+      <section class="right-side"></section>
+    </header>
+
+    <section class="main-section">
+      <section class="left-side"></section>
+      <section class="article-content post">
+        
+        {{ content }}
+
+      </section>
+      <section class="right-side"></section>
+    </section>
+
+  </body>
+</html>
