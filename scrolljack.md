@@ -5,7 +5,7 @@ permalink: /articles/scrolljack/
 article_title: What's wrong with the watchOS4 page?
 ---
 
-Apple's WWDC 2017 just happened and one of the six announcements was the new version of watchOS. Along with the new version of iOS and macOS (the name *High Sierra* warrants an article on its own), shiny new pages were set up in the Apple website to showcase the new features of each of these OS updates. I have to admit that I am not particularly interested in the Apple Watch (I don't own one), but I figured I would look into the updates they had for (probably) the only smart-watch platform that has the chance of succeeding; I was greeted with this.
+In Apple's WWDC 2017, one of the six announcements was the new version of watchOS. Along with the new version of iOS and macOS (the name *High Sierra* warrants an article on its own), shiny new pages were set up in the Apple website to showcase the new features of each of these OS updates. I have to admit that I am not particularly interested in the Apple Watch (I don't own one), but I figured I would look into the updates they had for (probably) the only smart-watch platform that has the chance of succeeding; I was greeted with this.
 
 On the surface, everything seems fine, good even. After all, Apple is known for its designs. Centered image of the product with big bold typography and smooth animations, it seems to tick all the boxes of a well designed, modern web page. So what's wrong then? 
 
@@ -15,7 +15,7 @@ The scrolling behaviour on this page does not work as you would expect on a stat
 
 Then it just stops.
 
-The watch stops moving and texts start fading in, yet you haven't stopped scrolling. You keep scrolling, animations start playing in the watch and texts continue to fade in and out. Then all of a sudden, the watch flies off the screen again, replaced by yet another watch moving in from below. The same thing happens repeatedly until you reach the end of the page.
+The watch stops moving and text starts fading in, yet you haven't stopped scrolling. You keep scrolling, animations start playing in the watch and texts continue to fade in and out. Then all of a sudden, the watch flies off the screen again, replaced by yet another watch moving in from below. The same thing happens repeatedly until you reach the end of the page.
 
 This kind of scrolling behaviour frustrates me, and looking at **this** reddit thread, it looks like I'm not the only one.
 
@@ -47,7 +47,7 @@ I have a firm belief that unless you have very good reasons to do so, you should
 
 ## Does it matter?
 
-You're probably thinking that my answer to this would be a solid **YES**, and we should just burn all the sites that scroll-jacks. Well you would be partially correct. My actual answer to this is a boring "It depends".
+You're probably thinking that my answer to this would be a solid **YES**, and we should just burn all the scroll-jacked sites. Well you would be partially correct. My actual answer to this is a boring "It depends".
 
 *It depends* because there are people who likes this sort of aesthetic and style. Looking through the comments on the aforementioned reddit thread, it is not hard to find people who like the watchOS page. On top of that, not every page is built for effectively delivering information or expects their readers to revisit the page. In these cases, the occasional surprise element may actually work in the site owner's favour. After all, this is not the first time Apple has done this, a few years back, virtually all flagship Apple product pages were scroll-jacked. (Only the Mac Pro page from that era survives to this day) I vividly remember my friends being extremely impressed with the the visual elements of those pages to the point where they have the desire to purchase the products. Clearly, the scroll-jackings didn't matter.
 
