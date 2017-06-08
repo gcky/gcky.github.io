@@ -3,13 +3,13 @@
   {% include head.html %}
   <body>
 
-    <header class="subpage-header">
+    <header class="subpage-header .{{ page.colour }}">
       <section class="left-side">
           <a class="back" href="{{ site.baseurl }}/"><i class="material-icons" role="button" aria-label="Back">arrow_back</i></a>
       </section>
       <section class="subpage-content">
-        <h1>Projects</h1>
-        <p>Showcase of my recent work</p>
+        <h1>{{ page.title_heading }}</h1>
+        <p>{{ page.subheading }}</p>
       </section>
       <section class="right-side"></section>
     </header>

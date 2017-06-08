@@ -22,7 +22,10 @@
     function positionBackButton() {
       var backButtons = document.getElementsByClassName('back')
       if (backButtons.length == 0) return;
-      backButtons[0].style.left = document.getElementsByClassName('subpage-content')[0].getBoundingClientRect().left - 100 + 'px';
+      var centeredContent = document.getElementsByClassName('article-content')[0];
+      if (!centeredContent) centeredContent = document.getElementsByClassName('subpage-content')[0];
+      if (!centeredContent) return;
+      backButtons[0].style.left = centeredContent.getBoundingClientRect().left - 100 + 'px';
     }
   </script>
 
