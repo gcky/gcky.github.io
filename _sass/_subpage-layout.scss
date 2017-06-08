@@ -81,7 +81,6 @@
 }
 
 .subpage-header {
-  background: #039be5;
   display: flex;
   justify-content: center;
   height: 220px;
@@ -119,6 +118,18 @@
       color: #757575;
       font-weight: 400;
     }
+  }
+
+  &.blue {
+    background: #039be5;
+  }
+
+  &.amber {
+    background: #ffb300;
+  }
+
+  &.green {
+    background: #43a047;
   }
 
   /* PROJECT PAGE HEADER */
@@ -165,6 +176,10 @@
 
     &.post {
       padding-top: 82px;
+
+      p {
+        max-width: 700px;
+      }
 
       span,
       h1,
