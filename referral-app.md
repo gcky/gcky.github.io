@@ -1,8 +1,8 @@
 ---
-layout: project-page
+layout: article
 title: Referral App + Dashboard
 permalink: /projects/referral-app/
-project_title: Referral App + Dashboard
+article_title: Referral App + Dashboard
 ---
 
 In my first year of university study, I worked on an app development group project. The group worked with University College Hospital (UCLH) to develop a proof-of-concept patient referral system which included an iOS app as well as a web admin dashboard.
@@ -12,6 +12,8 @@ In my first year of university study, I worked on an app development group proje
 Patients often get referred to different departments in the hospital. Currently, the referral process requires doctors to obtain relevant forms for the referring department, print out and fill the form, and finally scan and email the form to the relevant departments. This is a very time consuming process from both the doctors and the department administrators perspectives.
 
 The project aimed to create a proof-of-concept referral system that would allow doctors to referral patients quickly using an iOS app. Doctors would fill in the forms digitally before sending them to the relevant departments, and the administrators would organize these referrals using a web interface.
+
+![Referral dashboard screenshot]({{ "/assets/referral/referraldashboard.jpg" | absolute_url }} "Referral dashboard screenshot")
 
 ## Roles & Responsibilities
 
@@ -24,6 +26,8 @@ The project aimed to create a proof-of-concept referral system that would allow 
 - Developing a HTML based iOS application
 - Creating a PHP web server to service referral requests with a MySQL database
 - Using HTML and CSS to develop a web app
+
+![Referral app screenshot]({{ "/assets/referral/referralapp.jpg" | absolute_url }} "Referral app screenshot")
 
 ## Project Outcome
 

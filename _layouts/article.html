@@ -3,13 +3,19 @@
   {% include head.html %}
   <body>
 
-    <a class="back" href="{{ site.baseurl }}/articles"><i class="material-icons" role="button" aria-label="Back">arrow_back</i></a>
+    <a class="back" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/ic_arrow_back_black_24px.svg">
+    </a>
+
+    <a class="small-back" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/ic_arrow_back_black_24px.svg">
+    </a>
 
     <section class="main-section">
       <section class="left-side"></section>
       <section class="article-content post">
 
-        <span>Article</span>
+        <span>Project</span>
         <h1>{{ page.article_title }}</h1>
         <span class="subheading">{{ page.subheading }}</span>
         

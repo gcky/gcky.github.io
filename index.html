@@ -2,23 +2,60 @@
 layout: default
 ---
 
-<header class="main-desc">
-  <h1>Gordon Cheng</h1>
-  <p>An undergraduate computer science student at UCL who likes to design and program stuff.</p>
+<header class="subpage-header clear">
+  <section class="left-side">
+      <!-- <a class="back" href="{{ site.baseurl }}/"><i class="material-icons" role="button" aria-label="Back">arrow_back</i></a> -->
+  </section>
+  <section class="subpage-content">
+    <span class="title-bull">&bull; </span>
+    <h1>Gordon Cheng</h1>
+    <p>An undergraduate computer science student at UCL who likes to design and program stuff.</p>
+  </section>
+  <section class="right-side"></section>
 </header>
 
-<nav>
+<section class="main-section">
+  <section class="left-side"></section>
+  <section class="subpage-content">
 
-  <a href="{{ site.baseurl }}/projects"><div class="main-nav-blob projects">
-    <h2>projects</h2>
-  </div></a>
+    <div class="home-section">
+      <p class="subheader"><span>&bull;</span>Projects</p>
+      <p class="subheader-desc">Things that I've worked on / working on</p>
+    </div>
 
-  <div class="main-nav-blob labs">
-    <h2>labs</h2>
-  </div>
+    <a class="card-link" href="{{ site.baseurl }}/projects/willow">
+      <div class="content-card border-orange">
+        <h2>Willow</h2>
+        <p>A university project where I worked in a team to create a web tool for cleaning, transforming, analyzing, and visualizing data.</p>
+      </div>
+    </a>
 
-   <a href="{{ site.baseurl }}/articles"><div class="main-nav-blob blog">
-    <h2>articles</h2>
-  </div></a>
+    <a class="card-link" href="{{ site.baseurl }}/projects/willow-website">
+      <div class="content-card border-blue">
+        <h2>Project Website for Willow</h2>
+        <p>A website built for the Willow project to document the development of the project as well as providing support for users of Willow.</p>
+      </div>
+    </a>
 
-</nav>
+    <a class="card-link" href="{{ site.baseurl }}/projects/the-next-station-is">
+      <div class="content-card border-teal">
+        <h2>The Next Station Is...</h2>
+        <p>A video and web design project where I create montages of the surrounding area
+            of every zone 1 &amp; 2 stations on the London Underground.</p>
+      </div>
+    </a>
+
+    <a class="card-link" href="{{ site.baseurl }}/projects/referral-app">
+      <div class="content-card border-magenta">
+        <h2>Referral App + Dashboard</h2>
+        <p>A group project to build a proof-of-concept patient referral system for UCLH involving an iOS app and a web-based admin dashboard.</p>
+      </div>
+    </a>
+
+  </section>
+  <section class="right-side"></section>
+</section>
+
+<div class="background-image">
+  <img src="assets/bg.png">
+</div>

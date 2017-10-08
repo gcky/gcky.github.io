@@ -1,41 +1,40 @@
 ---
-layout: project-page
+layout: article
 title: Willow
 permalink: /projects/willow/
-project_title: Willow
+article_title: Willow
 ---
 
 As part of my second year of university, I worked on a Systems Engineering group project. The group worked with [Seldon](http://www.seldon.io), a London-based machine learning startup, to create a web tool that can be used to pre-process data for use with machine learning.
 
-![Willow screenshot](http://gcky.github.io/assets/tungsten/transform.png "Willow screenshot")
+![Willow screenshot]({{ "/assets/willow/transform.jpg" | absolute_url }} "Willow screenshot")
+
+## Background
+
+Raw data collected from the real-world can be very **messy**, incoherent, and inconsistent. In most cases, the data have to be **pre-processed** to clean out inconsistencies within the data and have key features extracted before they can be used for machine learning. This process is often done **manually** using command-line tools and can take up a lot of time before any *real work* can be done on the data.
 
 ## Project Aim
 
-Raw data collected from the real-world can be very messy, incoherent, and inconsistent. In most cases, the data have to be pre-processed to clean out inconsistencies within the data and have key features extracted before they can be used for machine learning. This process is often done manually using command-line tools and can take up a lot of time before any *real work* can be done on the data.
+Create a web tool with a graphical user interface that can:
 
-The aim of this project was to create a tool that helps developer with this process by creating a graphical environment that the developers can interact with to clean their dataset as well as spotting trends and patterns within the data to help them extract features of interest.
+- **Clean** and transform datasets
+- **Analyze** datasets and give useful statistics
+- **Visualize** dataset to help spot patterns
 
 ## Roles & Responsibilities
 
-- **Deputy Group Manager** - Assisted the group manager with allocating work and communicating with the client. 
-- **UI Lead** - In charge of designing and implementing the user interface of the system, making sure that it is easy to use and aesthetically pleasing. 
-- **Chief Editor** - Responsible for writing and editing documentation such as the user guide and the project website.
+- **Deputy Group Manager** --- Assisted the group manager with allocating work and communicating with the client. 
+- **UI Lead** --- In charge of designing and implementing the user interface of the system, making sure that it is easy to use and aesthetically pleasing. 
+- **Chief Editor** --- Responsible for writing and editing documentation such as the user guide and the project website.
 
-![Willow screenshot](http://gcky.github.io/assets/tungsten/analyze.png "Willow screenshot")
+![Willow screenshot]({{ "/assets/willow/analyze.jpg" | absolute_url }} "Willow screenshot")
 
 ## Skills Developed
-
-### Software Development
 
 - Developing web applications using HTML, CSS, and AngularJS framework
 - Working with Python modules including Pandas and scikit-learn
 - Maintaining consistent code quality and collaborating with other group members
-
-### Project Management
-
 - Working in a professional manner with other group members as well as the client
-- Working in an Agile scheme
-- Communicating effectively with client to ensure requirements were met
 
 ## Project Outcome
 
@@ -43,4 +42,4 @@ The group worked on the project for 6 months and were wholly responsible for pla
 
 Our client, Seldon, was extremely impressed with the product, praising especially it's user interface, and the product was featured in one of their blog posts. This project also achieved the highest mark out of the 40 or so projects of the same module.
 
-![Willow screenshot](http://gcky.github.io/assets/tungsten/visualize.png "Willow screenshot")
+![Willow screenshot]({{ "/assets/willow/visualize.jpg" | absolute_url }} "Willow screenshot")
