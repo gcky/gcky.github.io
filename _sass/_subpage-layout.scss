@@ -111,6 +111,13 @@
   }
 }
 
+@media screen and (max-width: 390px) {
+  .content-card {
+    padding: 20px 0 0 30px;
+    height: 230px;
+  }
+}
+
 // .border-teal {
 //   border-left: 3px solid #009688;
 //   border-top-left-radius: 0;
