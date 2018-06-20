@@ -6,8 +6,8 @@
 
 
 // Our variables
-$base-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-$content-font-family: 'Cabin', 'Helvetica Neue', Arial, sans-serif;
+$base-font-family: Inconsolata, Consolas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$content-font-family: Inconsolata, Consolas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -16,6 +16,7 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
+$dark-background-color: #1b1b1b;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
