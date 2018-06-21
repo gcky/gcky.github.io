@@ -1,11 +1,15 @@
 ---
 layout: article
 title: Referral App + Dashboard
-permalink: /projects/referral-app/
+date: 2015-11-17 16:16:01 -0600
+categories: article
 article_title: Referral App + Dashboard
+type: ARTICLE
+color: orange
+icon: 🌟
 ---
 
-In my first year of university study, I worked on an app development group project. The group worked with University College Hospital (UCLH) to develop a proof-of-concept patient referral system which included an iOS app as well as a web admin dashboard.
+In my first year of university study, I worked on an app development group project. The group worked with University College Hospital (UCLH) to develop a proof-of-concept patient referral system which included an iOS app as well as a web admin dashboard. 
 
 ## Project Aim
 

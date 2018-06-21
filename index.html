@@ -4,7 +4,6 @@ permalink: /
 ---
 
 <div class="main-grid">
-    <!-- <div class="home-item"></div> -->
     <header class="home-item title-container--name">
         <div class="left-cover">
             <img class="cover--profile-pic" src="assets/dp.png" alt="Picture of Gordon">
@@ -12,7 +11,7 @@ permalink: /
         <div class="right-details">
             <h1 class="right-details__title--name">GORDON CHENG</h1>
             <span class="right-details__description">
-                Recent computer science graduate.
+                Recent computer science graduate. Passionate about technology and design.
             </span>
         </div>
     </header>
@@ -25,6 +24,8 @@ permalink: /
         </div>
     </div>
 
+    {%- if site.posts.size > 0 -%}
+    <div class="home-item header-separator"></div>
     <div class="home-item title-container--section">
         <div class="right-details">
             <h1 class="right-details__title--section orange">ARTICLES</h1>
@@ -32,17 +33,19 @@ permalink: /
     </div>
 
     <div class="home-item article-container--generic">
+        {% for post in site.posts limit:3 %}
         <div class="left-cover">
-            <h1 class="cover--emoji">🌟</h1>
+            <h1 class="cover--emoji">{{ post.icon }}</h1>
         </div>
         <div class="right-details">
-            <a class="title-links" href="{{ site.baseurl }}/projects/the-next-station-is"><h1 class="right-details__title--generic">Monthly Favourites - June 2018</h1></a>
+            <a class="title-links" href="{{ post.url }}"><h1 class="right-details__title--generic">{{ post.article_title }}</h1></a>
             <div class="right-details__description">
-                A video and web design project in which I create montages of the surrounding area 
-                of every London Underground stations in zones 1 and 2.
+                    {%- if post.custom_excerpt -%}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | truncatewords: 30 }}{%- endif -%}<em>&nbsp;(Posted: {{ post.date | date: "%Y-%m-%d"}})</em>
             </div>
         </div>
+        {% endfor %}
     </div>
+    {%- endif -%}
 
     <div class="home-item title-container--section">
         <div class="right-details">
