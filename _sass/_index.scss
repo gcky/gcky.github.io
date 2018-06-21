@@ -1,10 +1,11 @@
 $title-color: rgba(0,0,0,.7);
 $subtitle-color: rgba(0,0,0,.8);
 $text-color: rgba(0,0,0,.7);
+$faint-text-color: rgba(0,0,0,.5);
 $section-title--red: #FF5B5B;
 $section-title--blue: #377FEB;
 $section-title--orange: #FF8710;
-$link-highlight-color: lime;
+$link-highlight-color: #448AFF;
 
 .red {
     color: $section-title--red;
@@ -17,7 +18,10 @@ $link-highlight-color: lime;
 }
 
 
-
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 body {
     background: $background-color;
@@ -26,6 +30,7 @@ body {
 .main-grid {
     display: grid;
     grid-template-columns: 15vw minmax(50px, 800px) auto 20vw;
+    animation: fadein 300ms;
 }
 
 .home-item {
@@ -36,6 +41,10 @@ body {
 
     &.title-container--name {
         margin-top: 15vh;
+    }
+    &.title-container--name--small {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
     &.title-container--section {
         margin-top: 50px;
@@ -56,9 +65,19 @@ body {
 }
 .cover--profile-pic {
     border-radius: 100%;
+    max-width: 80px;
+
+    &.small {
+        max-width: 50px;
+    }
 }
 .cover--emoji {
     font-size: 1.3rem;
+    margin: 0;
+
+    &.large {
+        font-size: 2rem;
+    }
 }
 
 .right-details {
@@ -72,7 +91,23 @@ body {
     font-size: 2.3rem;
     font-weight: bold;
     letter-spacing: 3px;
-    color: $title-color;
+    color: $faint-text-color;
+
+    &.small {
+        font-size: 1rem;
+        font-weight: normal;
+        &:before {
+            content: '\02190';
+            position: absolute;
+            transform: translateX(-30px);
+            margin-right: 10px;
+            transition: 100ms ease-in-out;
+        }
+        &:hover:before {
+            color: $link-highlight-color;
+            transform: translateX(-50px);
+        }
+    }
 }
 .right-details__title--section {
     margin: 0;
@@ -87,7 +122,7 @@ body {
     color: $subtitle-color;
     text-decoration: none;
     &:after {
-        content: '>';
+        content: '\02192';
         color: $text-color;
         margin-left: 10px;
         transition: 100ms ease-in-out;
@@ -97,12 +132,56 @@ body {
         margin-left: 20px;
     }
 }
+.right-details__title--content {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 .right-details__description {
     font-size: .9rem;
     line-height: .95rem;
     padding-top: 5px;
 }
+.right-details__description--content {
+    font-size: .9rem;
+    line-height: .95rem;
+    padding-top: 30px;
+    h1, h2, h3 {
+        font-weight: bold;
+    }
+    h2 {
+        margin-top: 45px;
+    }
+}
 
 .title-links {
     text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: $on-palm) {
+    .main-grid {
+        grid-template-columns: 8vw minmax(50px, 800px) auto 8vw;
+    }
+    .home-item {
+        grid-template-columns: 0 0 auto;
+    }
+    .left-cover {
+        grid-column: 3 / 4;
+        align-items: flex-start;
+    }
+    .right-details__title--name {
+        &.small {
+            &:before {
+                position: initial;
+                margin-right: 10px;
+            }
+            &:hover:before {
+                color: $link-highlight-color;
+            }
+        }
+    }
 }

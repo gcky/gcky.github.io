@@ -2,7 +2,10 @@
 layout: article
 title: Willow
 permalink: /projects/willow/
+type: PROJECT
+color: red
 article_title: Willow
+icon: 📈
 ---
 
 As part of my second year of university, I worked on a Systems Engineering group project. The group worked with [Seldon](http://www.seldon.io), a London-based machine learning startup, to create a web tool that can be used to pre-process data for use with machine learning.
