@@ -10,10 +10,11 @@ icon: 🌟
 custom_excerpt: A round-up of interesting stuff I found in the past month.
 ---
 
+![Carlton Ident]({{ "/assets/posts/carlton.jpg" | absolute_url }} "Carlton Ident")
 ## 1. Branding Carlton -- Interview with Lambie-Nairn Creative Director Brian Eley
 I have a particular interest in TV channel branding, which is why I found this interview transcript with the creative director of one of the most prestigious TV branding company immensely interesting. The UK "TV station" ITV is actually a network comprised of two companies -- STV, which broadcasts in Scotland, and ITV plc., which broadcasts in the rest of the UK. There used to be a lot more TV companies in the network, serving smaller regions, before they all inevitably merged into what we have today. One of these companies was Carlton, which initially served the London region on weekdays. Carlton did not have a good reputation, some will even say that it destroyed the network by initiating merges with smaller regional stations. 
 
-Nonetheless, this interview, which talked about how Lambie-Nairn designed the on-screen identity of the station throughout its existence, was a fascinating read; especially the last few paragraphs where Brian Eley expressed how the need for a strong brand for a TV channel is diminishing in this multi-channel and online age. I feel that this is particular relevant at a time when many criticised ["the lack of creativity and thought put"](https://en.wikipedia.org/wiki/BBC_One_%27Oneness%27_idents) in the idents for the flagship BBC channel.
+Nonetheless, this interview, which talked about how Lambie-Nairn designed the on-screen identity of the station throughout its existence in the 90s, was a fascinating read; especially the last few paragraphs where Brian Eley expressed how the need for a strong brand for a TV channel is diminishing in this multi-channel and online age. I feel that this is particular relevant at a time when many criticised ["the lack of creativity and thought put"](https://en.wikipedia.org/wiki/BBC_One_%27Oneness%27_idents) in the idents for the flagship BBC channel.
 
 [Full interview transcript](http://www.carltonmedia.org/uploads/1/0/0/1/10014606/brian_eley_interview_-_online_release_g.pdf)
 

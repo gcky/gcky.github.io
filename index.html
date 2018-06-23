@@ -32,19 +32,19 @@ permalink: /
         </div>
     </div>
 
+    {% for post in site.posts limit:3 %}
     <div class="home-item article-container--generic">
-        {% for post in site.posts limit:3 %}
         <div class="left-cover">
             <h1 class="cover--emoji">{{ post.icon }}</h1>
         </div>
         <div class="right-details">
             <a class="title-links" href="{{ post.url }}"><h1 class="right-details__title--generic">{{ post.article_title }}</h1></a>
             <div class="right-details__description">
-                    {%- if post.custom_excerpt -%}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | truncatewords: 30 }}{%- endif -%}<em>&nbsp;(Posted: {{ post.date | date: "%Y-%m-%d"}})</em>
+                    {%- if post.custom_excerpt -%}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | truncatewords: 50 }}{%- endif -%}<em>&nbsp;(Posted: {{ post.date | date: "%Y-%m-%d"}})</em>
             </div>
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
     {%- endif -%}
 
     <div class="home-item title-container--section">
@@ -81,7 +81,7 @@ permalink: /
 
     <div class="home-item title-container--section">
         <div class="right-details">
-            <h1 class="right-details__title--section blue">PLAYGROUND</h1>
+            <h1 class="right-details__title--section blue">LAB</h1>
         </div>
     </div>
 
