@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Monthly Recommendations (June 2018)
+title: Article - Monthly Recommendations (June 2018)
 date: 2018-06-20 16:16:01 -0600
 categories: article
 article_title: Monthly Recommendations (June 2018)

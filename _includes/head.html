@@ -12,23 +12,5 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet"> -->
-
-  <script>
-    window.onresize = function(event) {
-      positionBackButton();
-    };
-    window.onload = function(event) {
-      positionBackButton();
-    }
-    function positionBackButton() {
-      var backButtons = document.getElementsByClassName('back')
-      if (backButtons.length == 0 || window.innerWidth < 1200) return;
-      var centeredContent = document.getElementsByClassName('article-content')[0];
-      if (!centeredContent) centeredContent = document.getElementsByClassName('subpage-content')[0];
-      if (!centeredContent) return;
-      backButtons[0].style.left = centeredContent.getBoundingClientRect().left - 100 + 'px';
-    }
-  </script>
-
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
 </head>
