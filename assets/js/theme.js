@@ -29,7 +29,7 @@ function switchToDarkTheme() {
     style.setProperty('--faint-text-color', 'rgba(255,255,255,.5)');
     try {
         document.getElementById('theme-chooser-btn').innerHTML = '☀️';
-    } catch {
+    } catch (e) {
         return;
     }
 }
@@ -43,7 +43,7 @@ function switchToDefaultTheme() {
     style.setProperty('--faint-text-color', '');
     try {
         document.getElementById('theme-chooser-btn').innerHTML = '🌖';
-    } catch {
+    } catch (e) {
         return;
     }
 }

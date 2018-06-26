@@ -1,10 +1,10 @@
 ---
 layout: article
-title: Article - Monthly Recommendations (June 2018)
+title: Article - Monthly Picks (June 2018)
 date: 2018-06-20 16:16:01 -0600
 categories: article
-article_title: Monthly Recommendations (June 2018)
-type: ARTICLE
+article_title: Monthly Picks (June 2018)
+type: POST
 color: orange
 icon: 🌟
 custom_excerpt: A round-up of interesting stuff I found in the past month.
