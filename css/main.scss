@@ -46,9 +46,7 @@ $on-laptop:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "subpage-layout",
-        "index",
-        "syntax-highlighting"
-;
+@import "base";
+@import "subpage-layout";
+@import "index";
+@import "syntax-highlighting";
