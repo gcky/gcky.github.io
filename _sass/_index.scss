@@ -277,6 +277,9 @@ body {
     }
     .theme-chooser-btn {
         position: absolute;
+        &:before {
+            display: none;
+        }
     }
 
     _:-ms-lang(x), .home-item {
