@@ -249,6 +249,13 @@ body {
 
 
 
+@media screen and (max-width: $on-tablet) {
+    .main-grid {
+        grid-template-columns: 8vw minmax(50px, 800px) auto 100px;
+        -ms-grid-columns: 8vw minmax(50px, 800px) auto 100px;
+    }
+}
+
 @media screen and (max-width: $on-palm) {
     .main-grid {
         grid-template-columns: 8vw minmax(50px, 800px) auto 8vw;
