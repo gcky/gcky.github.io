@@ -81,7 +81,7 @@ body {
     align-items: center;
 }
 .cover--profile-pic {
-    border-radius: 100%;
+    border-radius: 37.5%;
     max-width: 80px;
 
     &.small {
@@ -270,6 +270,9 @@ body {
         -ms-grid-column: 3;
         -ms-grid-column-span: 2;
         align-items: flex-start;
+    }
+    .cover--profile-pic {
+        margin-bottom: 10px;
     }
     .right-details__title--name {
         &.small {
