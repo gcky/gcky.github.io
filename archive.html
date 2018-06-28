@@ -5,7 +5,7 @@ layout: default
 <div class="main-grid">
     <div class="home-item title-container--name--small">
         <div class="right-details">
-            <a class="title-links" href="/"><h1 class="right-details__title--name small">GORDON CHENG</h1></a>
+            <a class="title-links" href="{{ site.baseurl }}/"><h1 class="right-details__title--name small">GORDON CHENG</h1></a>
         </div>
     </div>
 
@@ -23,7 +23,7 @@ layout: default
         </div>
         <div class="right-details">
             {{ post.date | date: "%Y-%m-%d"}}
-            <a class="title-links" href="{{ post.url }}"><h1 class="right-details__title--generic">{{ post.article_title }}</h1></a>
+            <a class="title-links" href="{{ post.url | prepend: site.baseurl }}"><h1 class="right-details__title--generic">{{ post.article_title }}</h1></a>
             <div class="right-details__description">
                     {%- if post.custom_excerpt -%}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | truncatewords: 100 }}{%- endif -%}
             </div>
@@ -35,4 +35,4 @@ layout: default
 </div>
 
 <button id="theme-chooser-btn" class="theme-chooser-btn">☀️</button>
-<script src="assets/js/theme.js"></script>
+<script src="{{ "/assets/js/theme.js" | prepend: site.baseurl }}"></script>

@@ -7,7 +7,7 @@
     <div class="main-grid">
         <div class="home-item title-container--name--small">
             <div class="right-details">
-                <a class="title-links" href="/"><h1 class="right-details__title--name small">GORDON CHENG</h1></a>
+                <a class="title-links" href="{{ site.baseurl }}/"><h1 class="right-details__title--name small">GORDON CHENG</h1></a>
             </div>
         </div>
         <div class="home-item article-container--content">
@@ -29,6 +29,6 @@
     </div>
     <button id="theme-chooser-btn" class="theme-chooser-btn">🌖</button>
 </body>
-<script src="/assets/js/theme.js"></script>
+<script src="{{ "/assets/js/theme.js" | prepend: site.baseurl }}"></script>
 
 </html>
