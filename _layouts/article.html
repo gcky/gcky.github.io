@@ -1,34 +1,26 @@
-<!DOCTYPE html>
-<html>
-{% include head.html %}
+--- 
+layout: default
+---
 
-<body>
-
-    <div class="main-grid">
-        <div class="home-item title-container--name--small">
-            <div class="right-details">
-                <a class="title-links" href="{{ site.baseurl }}/"><h1 class="right-details__title--name small">GORDON CHENG</h1></a>
-            </div>
-        </div>
-        <div class="home-item article-container--content">
-            <div class="left-cover">
-                <h1 class="cover--emoji large">{{ page.icon }}</h1>
-            </div>
-            <div class="right-details">
-                <h2 class="right-details__title--section {{ page.color }}">{{ page.type }}</h2>
-                <h1 class="right-details__title--content">{{ page.article_title }}</h1>
-                {%- if page.date -%}
-                <h3 class="right-details__title--date">{{ page.date | date: "%Y-%m-%d"}}</h3>
-                {%- endif -%}
-                <div class="right-details__description--content">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
-        <div class="home-item footer-container"></div>
+<div class="home-item title-container--name--small">
+    <div class="right-details">
+        <a class="title-links" href="{{ site.baseurl }}/">
+            <h1 class="right-details__title--name small">GORDON CHENG</h1>
+        </a>
     </div>
-    <button id="theme-chooser-btn" class="theme-chooser-btn">🌖</button>
-</body>
-<script src="{{ "/assets/js/theme.js" | prepend: site.baseurl }}"></script>
-
-</html>
+</div>
+<div class="home-item article-container--content">
+    <div class="left-cover">
+        <h1 class="cover--emoji large">{{ page.icon }}</h1>
+    </div>
+    <div class="right-details">
+        <h2 class="right-details__title--section {{ page.color }}">{{ page.type }}</h2>
+        <h1 class="right-details__title--content">{% if page.article_title %}{{ page.article_title }}{% else %}{{ page.title }}{% endif %}</h1>
+        {%- if page.date -%}
+        <h3 class="right-details__title--date">{{ page.date | date: "%Y-%m-%d"}}</h3>
+        {%- endif -%}
+        <div class="right-details__description--content">
+            {{ content }}
+        </div>
+    </div>
+</div>

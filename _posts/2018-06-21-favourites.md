@@ -1,13 +1,13 @@
 ---
 layout: article
-title: Article - Monthly Picks (June 2018)
+title: Monthly Picks (June 2018)
 date: 2018-06-20 16:16:01 -0600
 categories: article
 article_title: Monthly Picks (June 2018)
-type: POST
+type: ARTICLE
 color: orange
 icon: 🌟
-custom_excerpt: A round-up of interesting stuff I found in the past month.
+excerpt: A round-up of interesting stuff I found in the past month.
 ---
 
 ![Carlton Ident]({{ "/assets/posts/carlton.jpg" | prepend: site.baseurl }}  "Carlton Ident")

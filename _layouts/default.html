@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
-    {{ content }}
-
+    <div class="main-grid">
+      {{ content }}
+      {% include footer.html %}
+    </div>
+    <button id="theme-chooser-btn" class="theme-chooser-btn">🌖</button>
   </body>
-
+  <script src="{{ "/assets/js/theme.js" | prepend: site.baseurl }}"></script>
 </html>

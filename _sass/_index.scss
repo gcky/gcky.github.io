@@ -67,8 +67,11 @@ body {
     &.header-separator {
         height: 3vh;
     }
+    &.article-separator {
+        height: 100px;
+    }
     &.footer-container {
-        height: 15vh;
+        height: 20vh;
     }
 }
 
@@ -204,6 +207,33 @@ body {
         color: $title-color;
         color: var(--title-color);
     }
+}
+.right-details__description--blognav {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    padding-top: 30px;
+    font-weight: bold;
+    a {
+        color: $title-color;
+        color: var(--title-color);
+    }
+}
+.right-details__footer {
+    padding-top: 10vh;
+    * {
+        color: $faint-text-color;
+        color: var(--faint-text-color);
+    }
+}
+.right-details__divider {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $faint-text-color;
+    border-top: 1px solid var(--faint-text-color);
+    margin: 50px 0;
+    padding: 0; 
+    opacity: .3;
 }
 
 .theme-chooser-btn {

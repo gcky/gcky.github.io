@@ -3,121 +3,132 @@ layout: default
 permalink: / 
 ---
 
-<div class="main-grid">
-    <header class="home-item title-container--name">
-        <div class="left-cover">
-            <img class="cover--profile-pic" src="assets/dp.png" alt="Picture of Gordon">
-        </div>
-        <div class="right-details">
-            <h1 class="right-details__title--name">GORDON CHENG</h1>
-            <span class="right-details__description">
-                Recent computer science graduate. Passionate about technology and design.
-            </span>
-        </div>
-    </header>
+<header class="home-item title-container--name">
+    <div class="left-cover">
+        <img class="cover--profile-pic" src="assets/dp.png" alt="Picture of Gordon">
+    </div>
+    <div class="right-details">
+        <h1 class="right-details__title--name">GORDON CHENG</h1>
+        <span class="right-details__description">
+            Recent computer science graduate. Passionate about technology and design.
+        </span>
+    </div>
+</header>
 
-    <div class="home-item article-container--generic">
-        <div class="right-details">
-            <div class="right-details__description">
-                <em>If I was a painter, I would say I enjoy using the paintbrush, but being able to use the paintbrush is not the reason I paint.</em>
-            </div>
+<div class="home-item article-container--generic">
+    <div class="right-details">
+        <div class="right-details__description">
+            <em>If I were a painter, I would say I enjoy using the paintbrush, but being able to use the paintbrush would not
+                be the reason I paint.</em>
         </div>
     </div>
+</div>
 
-    {%- if site.posts.size > 0 -%}
-    <div class="home-item header-separator"></div>
-    <div class="home-item title-container--section">
-        <div class="right-details">
-            <h1 class="right-details__title--section orange">POSTS</h1>
+{%- if site.posts.size > 0 -%}
+<div class="home-item header-separator"></div>
+<div class="home-item title-container--section">
+    <div class="right-details">
+        <h1 class="right-details__title--section orange">ARTICLES</h1>
+    </div>
+</div>
+
+{% for post in site.posts limit:3 %}
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">{{ post.icon }}</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="{{ post.url | prepend: site.baseurl }}">
+            <h1 class="right-details__title--generic">{% if post.article_title %}{{ post.article_title }}{% else %}{{ post.title }}{% endif %}</h1>
+        </a>
+        <div class="right-details__description">
+            {%- if post.custom_excerpt -%}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | truncatewords: 50 }}{%- endif
+            -%}
+            <em>&nbsp;(Posted: {{ post.date | date: "%Y-%m-%d"}})</em>
         </div>
     </div>
-
-    {% for post in site.posts limit:3 %}
-    <div class="home-item article-container--generic">
-        <div class="left-cover">
-            <h1 class="cover--emoji">{{ post.icon }}</h1>
-        </div>
-        <div class="right-details">
-            <a class="title-links" href="{{ post.url | prepend: site.baseurl }}"><h1 class="right-details__title--generic">{{ post.article_title }}</h1></a>
-            <div class="right-details__description">
-                    {%- if post.custom_excerpt -%}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | truncatewords: 50 }}{%- endif -%}<em>&nbsp;(Posted: {{ post.date | date: "%Y-%m-%d"}})</em>
-            </div>
+</div>
+{% endfor %}
+<div class="home-item article-container--generic">
+    <div class="right-details">
+        <div class="right-details__description">
+            <a class="title-links" href="{{ " /blog " | prepend: site.baseurl }}">
+                <h1 class="right-details__title--generic light">More Articles</h1>
+            </a>
         </div>
     </div>
-    {% endfor %}
-    <div class="home-item article-container--generic">
-        <div class="right-details">
-            <div class="right-details__description">
-                <a class="title-links" href="{{ "/archive" | prepend: site.baseurl }}"><h1 class="right-details__title--generic light">Post Archive</h1></a>
-            </div>
+</div>
+{%- endif -%}
+
+<div class="home-item title-container--section">
+    <div class="right-details">
+        <h1 class="right-details__title--section red">FEATURES</h1>
+    </div>
+</div>
+
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">🚉</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="{{ " /projects/the-next-station-is " | prepend: site.baseurl }}">
+            <h1 class="right-details__title--generic">The Next Station Is...</h1>
+        </a>
+        <div class="right-details__description">
+            A video and web design project in which I create montages of the surrounding area of every London Underground stations in
+            zones 1 and 2.
         </div>
     </div>
-    {%- endif -%}
+</div>
 
-    <div class="home-item title-container--section">
-        <div class="right-details">
-            <h1 class="right-details__title--section red">FEATURES</h1>
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">📈</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="{{ " /projects/willow " | prepend: site.baseurl }}">
+            <h1 class="right-details__title--generic">Willow</h1>
+        </a>
+        <div class="right-details__description">
+            A university project where I worked in a team to create a web tool for cleaning, transforming, analyzing, and visualizing
+            data.
         </div>
     </div>
+</div>
 
-    <div class="home-item article-container--generic">
-        <div class="left-cover">
-            <h1 class="cover--emoji">🚉</h1>
-        </div>
-        <div class="right-details">
-            <a class="title-links" href="{{ "/projects/the-next-station-is" | prepend: site.baseurl }}"><h1 class="right-details__title--generic">The Next Station Is...</h1></a>
-            <div class="right-details__description">
-                A video and web design project in which I create montages of the surrounding area 
-                of every London Underground stations in zones 1 and 2.
-            </div>
+<div class="home-item title-container--section">
+    <div class="right-details">
+        <h1 class="right-details__title--section blue">LAB</h1>
+    </div>
+</div>
+
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">🀄</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="http://gcky.github.io/jp-mahjong-calc">
+            <h1 class="right-details__title--generic">Japanese Mahjong Points Calculator</h1>
+        </a>
+        <div class="right-details__description">
+            A simple web app (in Chinese) for calculating and recording Japanese mahjong game points.
         </div>
     </div>
+</div>
 
-    <div class="home-item article-container--generic">
-        <div class="left-cover">
-            <h1 class="cover--emoji">📈</h1>
-        </div>
-        <div class="right-details">
-                <a class="title-links" href="{{ "/projects/willow" | prepend: site.baseurl }}"><h1 class="right-details__title--generic">Willow</h1></a>
-            <div class="right-details__description">
-                A university project where I worked in a team to create a web tool for cleaning, 
-                transforming, analyzing, and visualizing data.
-            </div>
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">📺</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="https://youtu.be/FIuDrShNU28">
+            <h1 class="right-details__title--generic">News Channel Graphics Design</h1>
+        </a>
+        <div class="right-details__description">
+            An attempt to redesign the on-screen graphics of a HK news channel whilst I was learning Adobe Premiere Pro.
         </div>
     </div>
-
-    <div class="home-item title-container--section">
-        <div class="right-details">
-            <h1 class="right-details__title--section blue">LAB</h1>
-        </div>
-    </div>
-
-    <div class="home-item article-container--generic">
-        <div class="left-cover">
-            <h1 class="cover--emoji">🀄</h1>
-        </div>
-        <div class="right-details">
-            <a class="title-links" href="http://gcky.github.io/jp-mahjong-calc"><h1 class="right-details__title--generic">Japanese Mahjong Points Calculator</h1></a>
-            <div class="right-details__description">
-                A simple web app (in Chinese) for calculating and recording Japanese mahjong game points.
-            </div>
-        </div>
-    </div>
-
-    <div class="home-item article-container--generic">
-        <div class="left-cover">
-            <h1 class="cover--emoji">📺</h1>
-        </div>
-        <div class="right-details">
-            <a class="title-links" href="https://youtu.be/FIuDrShNU28"><h1 class="right-details__title--generic">News Channel Graphics Design</h1></a>
-            <div class="right-details__description">
-                    An attempt to redesign the on-screen graphics of a HK news channel whilst I was learning Adobe Premiere Pro.
-            </div>
-        </div>
-    </div>
-
-    <div class="home-item footer-container"></div>
 </div>
 
 <button id="theme-chooser-btn" class="theme-chooser-btn">🌖</button>
-<script src="{{ "/assets/js/theme.js" | prepend: site.baseurl }}"></script>
+<script src="{{ " /assets/js/theme.js " | prepend: site.baseurl }}"></script>
