@@ -31,7 +31,10 @@ permalink: /blog/
             <h1 class="right-details__title--content">{% if post.article_title %}{{ post.article_title }}{% else %}{{ post.title }}{% endif %}</h1>
         </a>
         <div class="right-details__description--content">
-            {{ post.content }}
+            {{ post.content | split:'<!--break-->' | first }}
+            {% if post.content contains '<!--break-->' %}
+                <br><a href="{{ post.url }}">Continue Reading &rarr;</a>
+            {% endif %}
         </div>
     </div>
 </div>

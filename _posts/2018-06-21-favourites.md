@@ -16,6 +16,8 @@ I have a particular interest in TV channel branding, which is why I found this i
 
 Nonetheless, this interview, which talked about how Lambie-Nairn designed the on-screen identity of the station throughout its existence in the 90s, was a fascinating read; especially the last few paragraphs where Brian Eley expressed how the need for a strong brand for a TV channel is diminishing in this multi-channel and online age. I feel that this is particular relevant at a time when many criticised ["the lack of creativity and thought put"](https://en.wikipedia.org/wiki/BBC_One_%27Oneness%27_idents) in the idents for the flagship BBC channel.
 
+<!--break-->
+
 [Full interview transcript](http://www.carltonmedia.org/uploads/1/0/0/1/10014606/brian_eley_interview_-_online_release_g.pdf)
 
 ## 2. Cortex #70: CORTEK -- WWDC 2018

@@ -18,6 +18,8 @@ After I finished the last of my exams at the end of May, I started what is to be
 
 Out of all the places here, this is the furthest away from Central London, being all the way in Zone 6. It is by no means hard to get to though, from Ruislip Station on the Metropolitan and Piccadilly lines, it’s only a 20 minutes bus journey (H13) or a 30 minutes walk away. When you get there, you will be greeted with a sight you never thought would be geographically possible within London. It’s a beach. Yes, a sandy beach, _**with sand**_; and one that is large enough to actually accommodate a couple dozens of families on a hot sunny day. Admittedly, there are signs all around the beach warning you not to go in the water because there’re no lifeguards, but it’s a nice place to enjoy the sunshine nonetheless. Furthermore, after you have had enough of the sun, Uxbridge is just 3 stations away from Ruislip where you can shop and eat comfortably in one of the shopping arcades.
 
+<!--break-->
+
 *To get there: Take the Metropolitan/Piccadilly lines to Ruislip then get the H13 bus to Ruislip Lido.*
 
 ## 2. Tate Modern
