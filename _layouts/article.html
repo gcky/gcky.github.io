@@ -22,5 +22,16 @@ layout: default
         <div class="right-details__description--content">
             {{ content }}
         </div>
+        {% if page.date %}
+        <hr class="right-details__divider">
+        <div class="right-details__description--postnav">
+            {% if page.previous.url %}
+                <a class="prev" href="{{page.previous.url}}">&larr; Previous: {{page.previous.title}}</a>
+            {% endif %}
+            {% if page.next.url %}
+                <a class="next" href="{{page.next.url}}">Next: {{page.next.title}} &rarr;</a>
+            {% endif %}
+        </div>
+        {% endif %}
     </div>
 </div>

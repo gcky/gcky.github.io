@@ -1,6 +1,6 @@
 --- 
 layout: default 
-permalink: /blog/
+permalink: /blog/ 
 ---
 
 <div class="home-item title-container--name--small">
@@ -12,8 +12,14 @@ permalink: /blog/
 </div>
 
 <div class="home-item article-container--content">
+    <div class="left-cover">
+        <h1 class="cover--emoji large">✏️</h1>
+    </div>
     <div class="right-details">
-        <h1 class="right-details__title--content orange">ARTICLES</h1>
+        <h1 class="right-details__title--content orange">BLOG</h1>
+        <span class="right-details__description">
+            Because I write sometimes.
+        </span>
     </div>
 </div>
 <div class="home-item header-separator"></div>
@@ -31,9 +37,9 @@ permalink: /blog/
             <h1 class="right-details__title--content">{% if post.article_title %}{{ post.article_title }}{% else %}{{ post.title }}{% endif %}</h1>
         </a>
         <div class="right-details__description--content">
-            {{ post.content | split:'<!--break-->' | first }}
-            {% if post.content contains '<!--break-->' %}
-                <br><a href="{{ post.url }}">Continue Reading &rarr;</a>
+            {{ post.content | split:'<!--break-->' | first }} {% if post.content contains '<!--break-->' %}
+            <br>
+            <a href="{{ post.url }}">Continue Reading &rarr;</a>
             {% endif %}
         </div>
     </div>
@@ -43,21 +49,15 @@ permalink: /blog/
         <hr class="right-details__divider">
     </div>
 </div>
-{% endfor %}
-
-{% if paginator.total_pages > 1 %}
+{% endfor %} {% if paginator.total_pages > 1 %}
 <div class="home-item article-container--generic">
     <div class="right-details">
         <div class="right-details__description--blognav">
-        {% if paginator.previous_page %}
+            {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-        {% endif %}
-        {% if paginator.previous_page and paginator.next_page %}
-         / 
-        {% endif %}
-        {% if paginator.next_page %}
+            {% endif %} {% if paginator.previous_page and paginator.next_page %} / {% endif %} {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-        {% endif %}
+            {% endif %}
         </div>
     </div>
 </div>
