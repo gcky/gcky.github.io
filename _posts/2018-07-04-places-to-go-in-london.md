@@ -10,7 +10,7 @@ icon: 📍
 excerpt:
 ---
 
-After I finished the last of my exams at the end of May, I started what is to be my last ever summer holiday before I start my graduate job in July. Without anything to do, and with the weather being unusually good, I decided to walk around London and go to places I haven't been to, because I haven't done a lot of that in the 4 years I studied in London. Here are some of the places I think you should visit as well. 
+After finishing the last of my exams at the end of May, I started what is to be my last ever summer holiday before I start my graduate job in July. Without anything to do, and with the weather being unusually good, I decided to walk around London and go to places I haven't been to, because I haven't done a lot of that in the 4 years I studied in London. Here are some of the places I think you should visit as well. 
 
 ## 1. Ruislip Lido Beach
 
