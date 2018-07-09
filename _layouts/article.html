@@ -25,12 +25,23 @@ layout: default
         {% if page.date %}
         <hr class="right-details__divider">
         <div class="right-details__description--postnav">
-            {% if page.previous.url %}
-                <a class="prev" href="{{page.previous.url}}">&larr; Previous: {{page.previous.title}}</a>
-            {% endif %}
+            <div class="right-details__description--postnav__elem prev">
+                {% if page.previous.url %}
+                <span class="post-icon">{{page.previous.icon}}</span>
+                <a class="prev" href="{{page.previous.url}}">&larr; {{page.previous.title}}</a>
+                {% endif %}
+            </div>
             {% if page.next.url %}
-                <a class="next" href="{{page.next.url}}">Next: {{page.next.title}} &rarr;</a>
+                <div class="right-details__description--postnav__elem next">
+                    <span class="post-icon">{{page.next.icon}}</span>
+                    <a class="next" href="{{page.next.url}}">{{page.next.title}} &rarr;</a>
+                </div>
             {% endif %}
+        </div>
+        <div class="right-details__description--content no-top-padding">
+            <a class="title-links" href="{{ " /blog " | prepend: site.baseurl }}">
+                <h1 class="right-details__title--generic light">All Articles</h1>
+            </a>
         </div>
         {% endif %}
     </div>

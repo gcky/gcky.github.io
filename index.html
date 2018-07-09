@@ -36,6 +36,7 @@ permalink: /
 <div class="home-item article-container--generic">
     <div class="left-cover">
         <h1 class="cover--emoji">{{ post.icon }}</h1>
+        <div class="cover--date">{{ post.date | date: "%d/%m"}}</div>
     </div>
     <div class="right-details">
         <a class="title-links" href="{{ post.url | prepend: site.baseurl }}">
@@ -44,7 +45,6 @@ permalink: /
         <div class="right-details__description">
             {%- if post.custom_excerpt -%}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | truncatewords: 50 }}{%- endif
             -%}
-            <em>&nbsp;(Posted: {{ post.date | date: "%Y-%m-%d"}})</em>
         </div>
     </div>
 </div>

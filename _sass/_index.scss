@@ -99,6 +99,11 @@ body {
         font-size: 2rem;
     }
 }
+.cover--date {
+    font-size: .8rem;
+    color: $faint-text-color;
+    color: var(--faint-text-color);
+}
 
 .right-details {
     grid-column: 3 / 4;
@@ -187,12 +192,19 @@ body {
     font-size: .9rem;
     line-height: .95rem;
     padding-top: 5px;
+    a {
+        color: $faint-text-color;
+        color: var(--faint-text-color);
+    }
 }
 .right-details__description--content, 
 .right-details__description--postnav {
     font-size: .9rem;
     line-height: 1.2rem;
     padding-top: 30px;
+    &.no-top-padding {
+        padding-top: 0;
+    }
     h1, h2, h3 {
         font-weight: bold;
         color: $title-color;
@@ -225,6 +237,19 @@ body {
     justify-content: space-between;
     .next {
         text-align: right;
+    }
+}
+.right-details__description--postnav__elem {
+    display: flex;
+    flex-direction: column;
+    .post-icon {
+        font-size: 1.3rem;
+        color: white;
+        padding-bottom: 10px;
+    }
+    .next {
+        align-items: flex-end;
+        padding-left: 10px;
     }
 }
 .right-details__footer {
@@ -293,6 +318,12 @@ body {
         grid-template-columns: 8vw minmax(50px, 800px) auto 100px;
         -ms-grid-columns: 8vw minmax(50px, 800px) auto 100px;
     }
+    .theme-chooser-btn {
+        position: absolute;
+        &:before {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: $on-palm) {
@@ -322,12 +353,6 @@ body {
             &:hover:before {
                 color: $link-highlight-color;
             }
-        }
-    }
-    .theme-chooser-btn {
-        position: absolute;
-        &:before {
-            display: none;
         }
     }
 
