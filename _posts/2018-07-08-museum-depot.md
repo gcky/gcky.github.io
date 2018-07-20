@@ -1,7 +1,7 @@
 ---
 layout: article
-title: Visiting the Acton Museum Depot
-date: 2018-07-08 15:00:00 -0700
+title: A Visit to the Acton Museum Depot
+date: 2018-07-09 15:00:00 -0700
 categories: article
 article_title:
 type: ARTICLE
@@ -10,17 +10,19 @@ icon: 🚃
 excerpt:
 ---
 
-TfL's Museum Depot in Acton was opened to the public on the same weekend England advanced into the semi-finals of the world cup. Naturally, I was more excited about the former, because I'm not interested in football nor am I English. The Museum Depot is where the London Transport Museum (located in Covent Garden) stores the museum's collections that are not on display in the museum. The depot isn't usually open to the public, but there are open weekends throughout the year, typically in April, July, and September. This time they had a family theme, but that didn't prevent me from going alone.
+TfL's Museum Depot in Acton was opened to the public on the same weekend England advanced into the semi-finals of the world cup. Naturally, I was more excited about the former, because I'm not interested in football nor am I English. 
+
+The Museum Depot is where the London Transport Museum stores their collections that are not on display in the museum. The depot isn't usually open to the public, but there are open weekends throughout the year, typically in April, July, and September. This time they had a family theme, but that didn't prevent me from visiting alone.
 
 ![Trains]({{ "/assets/posts/depot/trains.jpg" | prepend: site.baseurl }}  "Trains")
 
-The depot itself is right across the road from Acton Town station, but I decided to take the E3 bus from Turnham Green instead because my travelcard only goes as far as Zone 2 and I wasn't really in any hurry. Tickets to the depot can be bought at the main gate, I booked mine online in advance instead. Most of the exhibits were inside the main shed, which was not particularly huge by train shed standard. The shed housed several old train carriages, although I don't really get excited by rolling stocks, there were a couple that caught my attention. 
+The depot itself is right across the road from Acton Town station, but I decided to take the E3 bus from Turnham Green instead because my travelcard only goes as far as Zone 2 and I wasn't really in any hurry. Tickets to the depot can be bought at the main gate, or they can be booked online in advance like I did. Most of the exhibits were inside the main shed, which was not particularly huge by train shed standard. The shed housed several old train carriages. Even though I don't really get excited by rolling stocks, there were a couple that caught my attention. 
 
 <!--break-->
 
 ![1986 Stock]({{ "/assets/posts/depot/1986stock.jpg" | prepend: site.baseurl }}  "1986 Stock")
 
-This first is the 1986 stock, which is actually a [prototype stock](https://en.wikipedia.org/wiki/London_Underground_1986_Stock) that never operated in normal passenger service. They were made to test out new designs for what eventually became the 1992 stock that runs on the Central line today. It looks just like the 1992 stock except it's painted in this pale green colour; and because it's physically so similar to the 1992 stock, it almost feels like it came from an alternate reality where tube trains are green. It is definitely unique, but also has a very 80s look to it. To be honest, I'm not sure if I would like that colour on today's tube trains.
+The first is the 1986 stock, which is actually a [prototype stock](https://en.wikipedia.org/wiki/London_Underground_1986_Stock) that never operated in normal passenger service. They were made to test out new designs for what eventually became the 1992 stock that runs on the Central line today. It looks just like the 1992 stock except it's painted in this pale green colour; and because it's physically so similar to the 1992 stock, it almost feels like it came from an alternate reality where tube trains were green. It is definitely unique, but also has a very 80s look to it. To be honest, I'm not sure if I would like that colour on today's tube trains.
 
 ![Class 487]({{ "/assets/posts/depot/class487.jpg" | prepend: site.baseurl }}  "Class 487")
 
@@ -30,11 +32,11 @@ In the next aisle, there lied the colourful [Class 487](https://en.wikipedia.org
 
 To the left of the train carriages, on a mezzanine level, housed some of my favourite exhibits from the depot. This was the signs and maps area. I have always been fascinated by tube maps and signage, and they are, in my opinion, some of the greatest designs of all time, especially considering how they became an icon for the capital and influenced designs of metro system signage around the world. 
 
-Under this mezzanine level, there was a collection of train and station models. One particular model caught my attention because, at first sight, I knew I have seen it before. It turns out, I saw it in an old [news footage](https://youtu.be/lm2N-g9hE9I?t=1m47s) about the [King's Cross fire](https://en.wikipedia.org/wiki/King%27s_Cross_fire), in which this was the model used by the officials to illustrate where the fire started and where the fatalities were inside the station. It was one of the worst disasters ever to have happened on the tube which made this model really moving emotionally.
+Under this mezzanine level, there was a collection of train and station models. One particular model caught my attention because, at first sight, I knew I have seen it before. It turns out, I saw it in an old [news footage](https://youtu.be/lm2N-g9hE9I?t=1m47s) about the [King's Cross fire](https://en.wikipedia.org/wiki/King%27s_Cross_fire), in which this was the model used by the officials to illustrate where the fire started and where the fatalities were inside the station. It was one of the worst disasters ever to have happened on the tube which made this model particularly special.
 
 ![King's Cross Model]({{ "/assets/posts/depot/kingscrossmodel.jpg" | prepend: site.baseurl }}  "King's Cross Model")
 
-There was also an area inside the shed which parked several buses (which frankly I wasn't really interested in), and an outdoor food and children area (which I didn't get anything from).
+There was also an area inside the shed which housed several buses (which frankly I wasn't really interested in), and an outdoor children and food area (which I didn't get anything from).
 
 Before I left, I visited the museum shop, which had pretty much the same stock as the one in Covent Garden. However, right next to it was the Friends of London Transport Museum shop, and this shop was much more interesting. There were second-hand books, old maps and pamphlets, and also old/unused signs and stickers. Inevitably, I bought some stuff, here are some of them.
 

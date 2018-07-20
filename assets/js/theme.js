@@ -1,10 +1,12 @@
 document.getElementById("theme-chooser-btn").addEventListener("click", function(){
     if (typeof(Storage) !== "undefined") {
         if (localStorage.getItem('darkTheme') == "undefined") {
-            localStorage.setItem('darkTheme', 'enabled');
+            console.log("lol")
+            localStorage.setItem('darkTheme', 'disabled');
+            switchToLightTheme();
         } else if (localStorage.getItem('darkTheme') == "enabled") {
             localStorage.setItem('darkTheme', 'disabled');
-            switchToDefaultTheme();
+            switchToLightTheme();
         } else {
             localStorage.setItem('darkTheme', 'enabled');
             switchToDarkTheme();
@@ -12,12 +14,16 @@ document.getElementById("theme-chooser-btn").addEventListener("click", function(
     }
 });
 
-if (typeof(Storage) !== "undefined" && localStorage.getItem('darkTheme') !== "undefined") {
-    if (localStorage.getItem('darkTheme') == "enabled") {
-        switchToDarkTheme();
+if (typeof(Storage) !== "undefined" 
+        && localStorage.getItem('darkTheme') !== "undefined" 
+        && localStorage.getItem('darkTheme') !== null) {
+    if (localStorage.getItem('darkTheme') == "disabled") {
+        switchToLightTheme();
     } else {
-        switchToDefaultTheme();
+        switchToDarkTheme();
     }
+} else {
+    localStorage.setItem('darkTheme', 'enabled');
 }
 
 function switchToDarkTheme() {
@@ -32,18 +38,28 @@ function switchToDarkTheme() {
     } catch (e) {
         return;
     }
+    document.querySelector('meta[name="theme-color"]').remove();
+    let newMetaChrome = document.createElement('meta');
+    newMetaChrome.setAttribute('name', 'theme-color');
+    newMetaChrome.setAttribute('content', '#282c34');
+    document.querySelector('head').append(newMetaChrome);
 }
 
-function switchToDefaultTheme() {
+function switchToLightTheme() {
     const style = document.documentElement.style;
-    style.setProperty('--main-background-color', '');
-    style.setProperty('--title-color', '');
-    style.setProperty('--subtitle-color', '');
-    style.setProperty('--text-color', '');
-    style.setProperty('--faint-text-color', '');
+    style.setProperty('--main-background-color', '#fdfdfd');
+    style.setProperty('--title-color', 'rgba(0,0,0,.7)');
+    style.setProperty('--subtitle-color', 'rgba(0,0,0,.8)');
+    style.setProperty('--text-color', 'rgba(0,0,0,.7)');
+    style.setProperty('--faint-text-color', 'rgba(0,0,0,.5)');
     try {
         document.getElementById('theme-chooser-btn').innerHTML = '🌖';
     } catch (e) {
         return;
     }
+    document.querySelector('meta[name="theme-color"]').remove();
+    let newMetaChrome = document.createElement('meta');
+    newMetaChrome.setAttribute('name', 'theme-color');
+    newMetaChrome.setAttribute('content', '#fdfdfd');
+    document.querySelector('head').append(newMetaChrome);
 }

@@ -1,6 +1,6 @@
-$title-color: rgba(0,0,0,.7);
-$subtitle-color: rgba(0,0,0,.8);
-$text-color: rgba(0,0,0,.7);
+$title-color: rgba(255,255,255,.8);
+$subtitle-color: rgba(255,255,255,.7);
+$text-color: rgba(255,255,255,.6);
 $faint-text-color: rgba(0,0,0,.5);
 $section-title--red: #FF5B5B;
 $section-title--blue: #448AFF;
@@ -12,11 +12,11 @@ $link-highlight-color: #448AFF;
 }
 
 :root {
-    --main-background-color: #fdfdfd;
-    --title-color: rgba(0,0,0,.7);
-    --subtitle-color: rgba(0,0,0,.8);
-    --text-color: rgba(0,0,0,.7);
-    --faint-text-color: rgba(0,0,0,.5);
+    --main-background-color: #282c34;
+    --title-color: rgba(255,255,255,.8);
+    --subtitle-color: rgba(255,255,255,.7);
+    --text-color: rgba(255,255,255,.6);
+    --faint-text-color: rgba(255,255,255,.5);
 }
 
 
@@ -97,6 +97,9 @@ body {
 
     &.large {
         font-size: 2rem;
+    }
+    &.xlarge {
+        font-size: 4rem;
     }
 }
 .cover--date {
@@ -267,7 +270,7 @@ body {
     border-top: 1px solid var(--faint-text-color);
     margin: 50px 0;
     padding: 0; 
-    opacity: .3;
+    opacity: .8;
 }
 
 .theme-chooser-btn {
