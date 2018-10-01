@@ -8,7 +8,7 @@ article_title: The Next Station Is...
 icon: 🚉
 ---
 
-*The Next Station Is...* is a personal project where I create a video montages of areas surrounding stations on the London Underground. This project is still on-going. *(There are surprisingly many tube stations.)*
+*The Next Station Is...* is a personal project where I create a video montages of areas surrounding stations on the London Underground. **_This project is currently on hiatus._**
 
 ![The Next Station Is... website screenshot]({{ "/assets/thenextstationis_screenshot.jpg" | absolute_url }} "The Next Station Is... website screenshot")
 
