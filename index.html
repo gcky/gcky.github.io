@@ -1,60 +1,130 @@
----
-layout: default
-permalink: /
+--- 
+layout: default 
+permalink: / 
 ---
 
-<header class="subpage-header clear">
-  <section class="left-side"></section>
-  <section class="subpage-content">
-    <span class="title-bull">&bull; </span>
-    <h1>Gordon Cheng</h1>
-    <p>An undergraduate computer science student at UCL who likes to design and program stuff.</p>
-  </section>
-  <section class="right-side"></section>
+<header class="home-item title-container--name">
+    <div class="left-cover">
+        <h1 class="cover--emoji xlarge">👨‍💻</h1>
+    </div>
+    <div class="right-details">
+        <h1 class="right-details__title--name">GORDON CHENG</h1>
+        <span class="right-details__description">
+            Recent computer science graduate. Passionate about technology and design.
+        </span>
+    </div>
 </header>
 
-<section class="main-section">
-  <section class="left-side"></section>
-  <section class="subpage-content">
-
-    <div class="home-section">
-      <p class="subheader"><span>&bull;</span>Projects</p>
-      <p class="subheader-desc">Things that I've worked / working on</p>
+<div class="home-item article-container--generic">
+    <div class="right-details">
+        <div class="right-details__description">
+            <em>If I were a painter, I would say I enjoy using the paintbrush, but being able to use the paintbrush would not
+                be the reason I paint.</em>
+        </div>
     </div>
+</div>
 
-    <a class="card-link" href="{{ site.baseurl }}/projects/the-next-station-is">
-      <div class="content-card border-teal">
-        <h2>The Next Station Is...</h2>
-        <p>A video and web design project where I create montages of the surrounding area
-            of every zone 1 &amp; 2 stations on the London Underground.</p>
-      </div>
-    </a>
+{%- if site.posts.size > 0 -%}
+<div class="home-item header-separator"></div>
+<div class="home-item title-container--section">
+    <div class="right-details">
+        <h1 class="right-details__title--section orange">ARTICLES</h1>
+    </div>
+</div>
 
-    <a class="card-link" href="{{ site.baseurl }}/projects/willow">
-      <div class="content-card border-orange">
-        <h2>Willow</h2>
-        <p>A university project where I worked in a team to create a web tool for cleaning, transforming, analyzing, and visualizing data.</p>
-      </div>
-    </a>
+{% for post in site.posts limit:3 %}
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">{{ post.icon }}</h1>
+        <div class="cover--date">{{ post.date | date: "%d/%m"}}</div>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="{{ post.url | prepend: site.baseurl }}">
+            <h1 class="right-details__title--generic">{% if post.article_title %}{{ post.article_title }}{% else %}{{ post.title }}{% endif %}</h1>
+        </a>
+        <div class="right-details__description">
+            {%- if post.custom_excerpt -%}{{ post.custom_excerpt }}{% else %}{{ post.excerpt | strip_html | truncatewords: 50 }}{%- endif
+            -%}
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="home-item article-container--generic">
+    <div class="right-details">
+        <div class="right-details__description">
+            <a class="title-links" href="{{ " /blog " | prepend: site.baseurl }}">
+                <h1 class="right-details__title--generic light">More Articles</h1>
+            </a>
+        </div>
+    </div>
+</div>
+{%- endif -%}
 
-    <a class="card-link" href="{{ site.baseurl }}/projects/willow-website">
-      <div class="content-card border-blue">
-        <h2>Project Website for Willow</h2>
-        <p>A website built for the Willow project to document the development of the project as well as providing support for users of Willow.</p>
-      </div>
-    </a>
+<div class="home-item title-container--section">
+    <div class="right-details">
+        <h1 class="right-details__title--section red">FEATURES</h1>
+    </div>
+</div>
 
-    <a class="card-link" href="{{ site.baseurl }}/projects/referral-app">
-      <div class="content-card border-magenta">
-        <h2>Referral App + Dashboard</h2>
-        <p>A group project to build a proof-of-concept patient referral system for UCLH involving an iOS app and a web-based admin dashboard.</p>
-      </div>
-    </a>
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">🚉</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="{{ " /projects/the-next-station-is " | prepend: site.baseurl }}">
+            <h1 class="right-details__title--generic">The Next Station Is...</h1>
+        </a>
+        <div class="right-details__description">
+            A video and web design project in which I create video montages of areas surrounding London Underground stations.
+        </div>
+    </div>
+</div>
 
-  </section>
-  <section class="right-side"></section>
-</section>
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">📈</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="{{ " /projects/willow " | prepend: site.baseurl }}">
+            <h1 class="right-details__title--generic">Willow</h1>
+        </a>
+        <div class="right-details__description">
+            A university project where I worked in a team to create a web tool for cleaning, transforming, analyzing, and visualizing
+            data.
+        </div>
+    </div>
+</div>
 
-<div class="background-image">
-  <img src="assets/bg.png">
+<div class="home-item title-container--section">
+    <div class="right-details">
+        <h1 class="right-details__title--section blue">LAB</h1>
+    </div>
+</div>
+
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">🀄</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="http://gcky.github.io/jp-mahjong-calc">
+            <h1 class="right-details__title--generic">Japanese Mahjong Points Calculator</h1>
+        </a>
+        <div class="right-details__description">
+            A simple web app (in Chinese) for calculating and recording Japanese mahjong game points. Created using jQuery.
+        </div>
+    </div>
+</div>
+
+<div class="home-item article-container--generic">
+    <div class="left-cover">
+        <h1 class="cover--emoji">📺</h1>
+    </div>
+    <div class="right-details">
+        <a class="title-links" href="https://youtu.be/FIuDrShNU28">
+            <h1 class="right-details__title--generic">News Channel Graphics Design</h1>
+        </a>
+        <div class="right-details__description">
+            A redesign attempt of the on-screen graphics of a Hong Kong news channel created whilst I was learning how to use Premiere Pro.
+        </div>
+    </div>
 </div>

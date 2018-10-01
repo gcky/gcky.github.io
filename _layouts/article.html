@@ -1,29 +1,48 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
+--- 
+layout: default
+---
 
-    <a class="back" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/ic_arrow_back_black_24px.svg">
-    </a>
-
-    <a class="small-back" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/ic_arrow_back_black_24px.svg">
-    </a>
-
-    <section class="main-section">
-      <section class="left-side"></section>
-      <section class="article-content post">
-
-        <span>Project</span>
-        <h1>{{ page.article_title }}</h1>
-        <span class="subheading">{{ page.subheading }}</span>
-        
-        {{ content }}
-
-      </section>
-      <section class="right-side"></section>
-    </section>
-
-  </body>
-</html>
+<div class="home-item title-container--name--small">
+    <div class="right-details">
+        <a class="title-links" href="{{ site.baseurl }}/">
+            <h1 class="right-details__title--name small">GORDON CHENG</h1>
+        </a>
+    </div>
+</div>
+<div class="home-item article-container--content">
+    <div class="left-cover">
+        <h1 class="cover--emoji large">{{ page.icon }}</h1>
+    </div>
+    <div class="right-details">
+        <h2 class="right-details__title--section {{ page.color }}">{{ page.type }}</h2>
+        <h1 class="right-details__title--content">{% if page.article_title %}{{ page.article_title }}{% else %}{{ page.title }}{% endif %}</h1>
+        {%- if page.date -%}
+        <h3 class="right-details__title--date">{{ page.date | date: "%Y-%m-%d"}}</h3>
+        {%- endif -%}
+        <div class="right-details__description--content">
+            {{ content }}
+        </div>
+        {% if page.date %}
+        <hr class="right-details__divider">
+        <div class="right-details__description--postnav">
+            <div class="right-details__description--postnav__elem prev">
+                {% if page.previous.url %}
+                <span class="post-icon">{{page.previous.icon}}</span>
+                <a class="prev" href="{{page.previous.url}}">&larr; {{page.previous.title}}</a>
+                {% endif %}
+            </div>
+            {% if page.next.url %}
+                <div class="right-details__description--postnav__elem next">
+                    <span class="post-icon">{{page.next.icon}}</span>
+                    <a class="next" href="{{page.next.url}}">{{page.next.title}} &rarr;</a>
+                </div>
+            {% endif %}
+        </div>
+        <div class="right-details__description--content no-top-padding">
+            <a class="title-links" href="{{ " /blog " | prepend: site.baseurl }}">
+                <h1 class="right-details__title--generic light">All Articles</h1>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>

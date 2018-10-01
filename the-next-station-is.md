@@ -2,10 +2,13 @@
 layout: article
 title: The Next Station Is...
 permalink: /projects/the-next-station-is/
+type: PROJECT
+color: red
 article_title: The Next Station Is...
+icon: 🚉
 ---
 
-*The Next Station Is...* is a personal project where I visit every zone 1 & 2 stations on the London Underground, and create a video montage of the surrounding areas of each station. This project is still on-going. *(There are surprisingly many stations in zones 1 & 2.)*
+*The Next Station Is...* is a personal project where I create a video montages of areas surrounding stations on the London Underground. This project is still on-going. *(There are surprisingly many tube stations.)*
 
 ![The Next Station Is... website screenshot]({{ "/assets/thenextstationis_screenshot.jpg" | absolute_url }} "The Next Station Is... website screenshot")
 

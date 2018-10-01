@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} — Gordon Cheng{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
@@ -11,22 +11,9 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="{{ "/assets/favicon.png" | prepend: site.baseurl }}">
 
-  <script>
-    window.onresize = function(event) {
-      positionBackButton();
-    };
-    window.onload = function(event) {
-      positionBackButton();
-    }
-    function positionBackButton() {
-      var backButtons = document.getElementsByClassName('back')
-      if (backButtons.length == 0 || window.innerWidth < 1200) return;
-      var centeredContent = document.getElementsByClassName('article-content')[0];
-      if (!centeredContent) centeredContent = document.getElementsByClassName('subpage-content')[0];
-      if (!centeredContent) return;
-      backButtons[0].style.left = centeredContent.getBoundingClientRect().left - 100 + 'px';
-    }
-  </script>
-
+  <meta name="theme-color" content="#282c34">
+  <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
 </head>
