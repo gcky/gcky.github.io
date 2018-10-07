@@ -1,8 +1,7 @@
 # Site settings
-title: Gordon Cheng
+title: GCKY
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  The portfolio of Gordon Cheng
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://gcky.github.io/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
